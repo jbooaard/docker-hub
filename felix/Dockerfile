@@ -1,0 +1,15 @@
+FROM centos:7
+MAINTAINER "Luca Palano" <contact@lpzone.it>
+LABEL version="0.1" \
+	  releaseDate="04-08-2016"
+
+# Env setup
+RUN yum update -y && yum install java-1.8.0-openjdk.x86_64 -y
+WORKDIR /home/felix
+
+# Download of felix 5.4 from official repo
+ADD http://mirrors.muzzy.it/apache/felix/org.apache.felix.main.distribution-5.4.0.tar.gz ./apache-felix-5.4.0.tar.gz
+
+RUN tar xvfz apache-felix-5.4.0.tar.gz && rm apache-felix-5.4.0.tar.gz
+
+CMD FELIX_FRAMEWORK_PATH=$(printf %s $PWD/$(ls -1)) && cd ${FELIX_FRAMEWORK_PATH} && java -jar ./bin/felix.jar
