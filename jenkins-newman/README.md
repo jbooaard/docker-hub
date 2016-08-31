@@ -24,7 +24,7 @@ When starting the container, you may add the **-i** option in order to be sure t
 ```
 docker start -i <containerid>
 ```
-Further informations about container data backup, jenkins and jvm configuration, etc can be founded to [the official docker hub jenkins page](https://hub.docker.com/_/jenkins/) (highly recommended).
+Further informations about container data backup, jenkins and jvm configuration, etc can be founded to [the official docker hub jenkins page](https://hub.docker.com/_/jenkins/) (recommended).
 
 ### Author
 
