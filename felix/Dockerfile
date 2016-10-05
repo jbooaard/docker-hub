@@ -1,7 +1,6 @@
 FROM centos:7
 MAINTAINER "Luca Palano" <contact@lpzone.it>
-LABEL version="0.1" \
-	  releaseDate="04-08-2016"
+LABEL releaseDate="04-08-2016"
 
 # Env setup
 RUN yum update -y && yum install java-1.8.0-openjdk.x86_64 -y
