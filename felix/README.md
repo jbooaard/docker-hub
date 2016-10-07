@@ -3,11 +3,15 @@ Apache felix
 
 This image may be used to run a container with Apache felix.
 
+### Available versions
+- 5.6.0 (latest)
+- 5.4.0
+
 ### How to use this image
 
 The fastest command to run the container:
 ```
-docker run -it lucapalano/felix
+docker run -it lucapalano/felix:latest
 ```
 
 The fastest command to run and assign a name:
