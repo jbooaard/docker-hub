@@ -6,7 +6,7 @@ LABEL releaseDate="05-10-2016"
 RUN yum update -y && yum install java-1.8.0-openjdk.x86_64 -y
 WORKDIR /home/felix
 
-# Download of felix 5.4 from official repo
+# Download of felix 5.6 from official repo
 ADD http://archive.apache.org/dist/felix/org.apache.felix.main.distribution-5.6.0.tar.gz ./apache-felix-5.6.0.tar.gz
 
 RUN tar xvfz apache-felix-5.6.0.tar.gz && rm apache-felix-5.6.0.tar.gz
