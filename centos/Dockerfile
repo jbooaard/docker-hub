@@ -9,11 +9,12 @@ RUN curl --silent --location https://rpm.nodesource.com/setup_4.x | bash
 
 # Env setup
 RUN yum update -y && \
-	  yum install git -y && \
-		yum install golang -y && \
-		yum install man -y && \
-		yum install accountsservice.x86_64 -y && \
-		yum install vim -y && \
-		yum install wget -y && \
-		yum install java-1.8.0-openjdk -y && \
-		yum install nodejs -y
+    yum install git -y && \
+    yum install golang -y && \
+    yum install man -y && \
+    yum install accountsservice.x86_64 -y && \
+    yum install vim -y && \
+    yum install wget -y && \
+    yum install java-1.8.0-openjdk -y && \
+    yum install nodejs -y && \
+    yum install maven -y
