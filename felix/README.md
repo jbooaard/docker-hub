@@ -4,7 +4,8 @@ Apache felix
 This image may be used to run a container with Apache felix.
 
 ### Available versions
-- 5.6.0 (latest)
+- 5.6.1 (latest)
+- 5.6.0
 - 5.4.0
 
 ### How to use this image
