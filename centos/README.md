@@ -11,6 +11,7 @@ This is an image built from centos:latest with some useful tools (\*):
 * wget
 * openjdk 1.8
 * nodejs 4.x
+* postfix
 
 (\*) _Where version is not specified, the default vendor version will be installed_
 
