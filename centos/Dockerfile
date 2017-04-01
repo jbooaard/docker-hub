@@ -17,4 +17,5 @@ RUN yum update -y && \
     yum install wget -y && \
     yum install java-1.8.0-openjdk -y && \
     yum install nodejs -y && \
-    yum install maven -y
+    yum install maven -y && \
+    yum install postfix -y
